@@ -2,19 +2,31 @@
 <html>
 <head lang="en">
 	<meta charset="UTF-8">
-	<title></title>
+	<title>Contact</title>
+	<style>
+		label,
+		input,
+		textarea {
+			display: block;
+		}
+		input,
+		textarea {
+			margin-bottom: 20px;
+			width: 200px;
+			padding: .25em;
+			box-sizing: border-box;
+		}
+
+	</style>
 </head>
 <body>
 <form action="#" method="GET">
 	<label for="name">Name</label>
 	<input type="text" name="name" id="name"/>
-	<hr/>
 	<label for="email">Email</label>
 	<input type="email" name="email" id="email"/>
-	<hr/>
 	<label for="msg">Message</label>
 	<textarea name="msg" id="msg" rows="10"></textarea>
-	<hr/>
 	<button type="submit">Go!</button>
 </form>
 <hr/>
