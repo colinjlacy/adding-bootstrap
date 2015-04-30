@@ -1,0 +1,36 @@
+main {
+	/*padding: 50px;*/
+	background-color: blue;
+	margin-top: 100px;
+
+}
+/* this style will fix the float problem that removes height from the container element */
+main:after{
+	clear: both;
+	content: "";
+	display: block;
+}
+
+/* notice that you can also create a class so that this style can be easily re-used throughout your site */
+.clearfix:after {
+	clear: both;
+	content: "";
+	display: block;
+}
+
+div {
+	width: 50px;
+	height: 50px;
+	display: block;
+	margin: 20px;
+	background-color: gray;
+	float: right;
+	color: white;
+}
+.left {
+	float: left;
+}
+aside {
+	display: block;
+	margin: 10px;
+}

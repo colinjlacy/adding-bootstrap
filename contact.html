@@ -3,31 +3,22 @@
 <head lang="en">
 	<meta charset="UTF-8">
 	<title>Contact</title>
-	<style>
-		label,
-		input,
-		textarea {
-			display: block;
-		}
-		input,
-		textarea {
-			margin-bottom: 20px;
-			width: 200px;
-			padding: .25em;
-			box-sizing: border-box;
-		}
-
-	</style>
+	<link rel="stylesheet" href="css/styles.css"/>
+	<link rel="stylesheet" href="css/more-styles.css"/>
 </head>
 <body>
 <form action="#" method="GET">
-	<label for="name">Name</label>
-	<input type="text" name="name" id="name"/>
+
+	<label class="blue" for="name">Name</label>
+	<input type="text" name="name" id="name" value="Colin"/>
+
 	<label for="email">Email</label>
 	<input type="email" name="email" id="email"/>
+
 	<label for="msg">Message</label>
 	<textarea name="msg" id="msg" rows="10"></textarea>
-	<button type="submit">Go!</button>
+
+	<button type="submit" id="submit-button">Go!</button>
 </form>
 <hr/>
 <a href="https://github.com/colinjlacy"><img src="img/gh.png" alt="Colin on Github" width="32"/></a>

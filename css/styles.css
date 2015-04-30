@@ -1,0 +1,56 @@
+#blue-p {
+	color: blue;
+}
+
+p {
+	color: #777;
+}
+
+.big-font {
+	font-size: 1.75em;
+}
+
+.uppercase-underline {
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+
+h1 {
+	padding: 10px;
+	border: 2px solid #333;
+}
+
+a {
+	width: 50px;
+	margin: 15px;
+	border: 1px solid #444;
+}
+
+label,
+input,
+textarea {
+	display: block;
+}
+input,
+textarea {
+	margin-bottom: 20px;
+	box-sizing: border-box;
+	width: 100%;
+}
+@media (min-width: 520px) {
+	input,
+	textarea {
+		max-width: 400px;
+		padding: 10px;
+	}
+	h1 {
+		padding: 20px;
+	}
+}
+@media (min-width: 768px) {
+	input,
+	textarea {
+		max-width: 700px;
+		padding: 20px;
+	}
+}
