@@ -1,31 +1,37 @@
-#blue-p {
-	color: blue;
+/************
+GLOBAL STYLES
+************/
+.clearfix:after {
+	clear: both;
+	content: "";
+	display: block;
 }
-
-p {
-	color: #777;
+header {
+	padding: 20px;
+	background-color: aquamarine;
 }
-
-.big-font {
-	font-size: 1.75em;
+nav {
+	background-color: #eee;
+	padding: 2px 0;
+	margin-bottom: 20px;
 }
-
-.uppercase-underline {
-	text-decoration: underline;
-	text-transform: uppercase;
+/* images */
+img {
+	width: 100%;
 }
-
-h1 {
-	padding: 10px;
-	border: 2px solid #333;
-}
-
+/* links */
 a {
-	width: 50px;
-	margin: 15px;
-	border: 1px solid #444;
+	color: #66c2a1;
+	font-weight: bold;
+	text-decoration: none;
 }
-
+a:hover {
+	color: #3c99a2;
+	text-decoration: underline;
+}
+/***********
+CONTACT FORM
+***********/
 label,
 input,
 textarea {
@@ -34,23 +40,85 @@ textarea {
 input,
 textarea {
 	margin-bottom: 20px;
+	padding: 5px;
 	box-sizing: border-box;
 	width: 100%;
 }
+/* Here I'll define some styles that give the contact page a fixed width at certain screen sizes */
 @media (min-width: 520px) {
-	input,
-	textarea {
+	.body-content {
 		max-width: 400px;
-		padding: 10px;
-	}
-	h1 {
-		padding: 20px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 @media (min-width: 768px) {
-	input,
-	textarea {
+	.body-content {
 		max-width: 700px;
-		padding: 20px;
+	}
+}
+@media (min-width: 1200px) {
+	.body-content {
+		max-width: 1170px;
+	}
+}
+/* These styles create the responsive layout for the First Name and Last Name inputs */
+.split {
+	width: 100%;
+	box-sizing: border-box;
+}
+@media (min-width: 520px) {
+	.split {
+		width: 50%;
+		float: left;
+	}
+	.split-left {
+		padding-right: 10px;
+	}
+	.split-right {
+		padding-left: 10px;
+	}
+}
+
+/*********
+ABOUT PAGE
+*********/
+.about-content {
+	width: 100%;
+}
+/*@media (min-width: 600px) {*/
+	/*.about-content {*/
+		/*max-width: 550px;*/
+	/*}*/
+/*}*/
+/*@media (min-width: 768px) {*/
+	/*.about-content {*/
+		/*max-width: 700px;*/
+	/*}*/
+/*}*/
+.portrait-wrapper,
+.bio-copy {
+	width: 100%;
+	box-sizing: border-box;
+}
+@media (min-width: 768px) {
+	.portrait-wrapper {
+		width: 40%;
+		padding-right: 10px;
+		float: left;
+	}
+	.bio-copy {
+		width: 60%;
+		padding-left: 10px;
+		float: left;
+	}
+}
+.portrait {
+	text-align: center;
+	margin: 0;
+}
+@media (min-width: 520px) {
+	.portrait {
+		text-align: left;
 	}
 }

@@ -3,28 +3,45 @@
 
 <head>
 	<title>HTML!!!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/styles.css"/>
 </head>
 
 <body>
-	<h1>Colin J Lacy</h1>
-	<h2>Some guy with a keyboard</h2>
+	<div class="body-content">
+		<header>
+			<h1>Colin J Lacy</h1>
+			<h2>Some guy with a keyboard</h2>
+		</header>
+		<main>
+			<nav class="navigation">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+				</ul>
+			</nav>
 
-	<p><a href="index.html">Home</a></p>
+			<section class="about-content clearfix">
+				<div class="portrait-wrapper">
+					<figure class="portrait">
+						<img src="img/colin.jpg" alt="Colin J Lacy"/>
+					</figure>
+				</div>
 
-	<img src="img/colin.jpg" alt="Colin J Lacy"/>
+				<div class="bio-copy">
+					<p class="big-font">Other than stepping <strong>into the boxing ring</strong> for some sparring a few times a month, I fit just about every stereotype of a standard web-developer.  I'm addicted to coffee, drive a Civic, and have a well thought-out argument for why Battlestar is far superior to both Star Wars and Star Trek.  I'm married with two dogs and live in Gretna, LA - just accross the Mississippi River from New Orleans.</p>
 
-	<p id="blue-p" class="big-font">Other than stepping <strong>into the boxing ring</strong> for some sparring a few times a month, I fit just about every stereotype of a standard web-developer.  I'm addicted to coffee, drive a Civic, and have a well thought-out argument for why Battlestar is far superior to both Star Wars and Star Trek.  I'm married with two dogs and live in Gretna, LA - just accross the Mississippi River from New Orleans.</p>
-
-	<p class="big-font">Other than stepping <strong>into the boxing ring</strong> for some sparring a few times a month, I fit just about every stereotype of a standard web-developer.  I'm addicted to coffee, drive a Civic, and have a well thought-out argument for why Battlestar is far superior to both Star Wars and Star Trek.  I'm married with two dogs and live in Gretna, LA - just accross the Mississippi River from New Orleans.</p>
-
-	<h3>The places with the best chow:</h3>
-	<ol>
-		<li><a href="http://www.emerilsrestaurants.com/emerils-new-orleans">Emeril's</a></li>
-		<li>Cochon</li>
-		<li>Midway Pizza</li>
-	</ol>
-
+					<aside>
+						<h3>The places with the best chow:</h3>
+						<ol>
+							<li><a href="http://www.emerilsrestaurants.com/emerils-new-orleans">Emeril's</a></li>
+							<li>Cochon</li>
+							<li>Midway Pizza</li>
+						</ol>
+					</aside>
+				</div>
+			</section>
+		</main>
+	</div>
 </body>
 
 </html>
