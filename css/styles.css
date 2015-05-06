@@ -7,13 +7,33 @@ GLOBAL STYLES
 	display: block;
 }
 header {
-	padding: 20px;
 	background-color: aquamarine;
+	background-image: none;
+}
+header a {
+	/*color: white;*/
+}
+header small {
+	color: #333;
+}
+header button.navbar-toggle {
+	border-color: white;
+}
+header button.navbar-toggle span {
+	border-color: white;
+	background-color: #ffffff;
 }
 nav {
 	background-color: #eee;
 	padding: 2px 0;
 	margin-bottom: 20px;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+	background: none;
+	text-decoration: underline;
+}
+footer {
+	margin-bottom: 30px;
 }
 /* images */
 img {
@@ -21,13 +41,24 @@ img {
 }
 /* links */
 a {
-	color: #66c2a1;
+	color: #366c56;
 	font-weight: bold;
 	text-decoration: none;
 }
 a:hover {
-	color: #3c99a2;
+	color: #295341;
 	text-decoration: underline;
+}
+/* text */
+h1 {
+	color: #666;
+	margin-top: 0;
+	font-weight: 100;
+	font-size: 6rem;
+	letter-spacing: 1px;
+}
+h2, h3 {
+	color: #777;
 }
 /***********
 CONTACT FORM
@@ -81,44 +112,11 @@ textarea {
 }
 
 /*********
-ABOUT PAGE
+HOME PAGE
 *********/
-.about-content {
-	width: 100%;
-}
-/*@media (min-width: 600px) {*/
-	/*.about-content {*/
-		/*max-width: 550px;*/
-	/*}*/
-/*}*/
-/*@media (min-width: 768px) {*/
-	/*.about-content {*/
-		/*max-width: 700px;*/
-	/*}*/
-/*}*/
-.portrait-wrapper,
-.bio-copy {
-	width: 100%;
-	box-sizing: border-box;
-}
-@media (min-width: 768px) {
-	.portrait-wrapper {
-		width: 40%;
-		padding-right: 10px;
-		float: left;
-	}
-	.bio-copy {
-		width: 60%;
-		padding-left: 10px;
-		float: left;
-	}
-}
-.portrait {
-	text-align: center;
-	margin: 0;
-}
-@media (min-width: 520px) {
-	.portrait {
-		text-align: left;
-	}
+
+.portfolio-item {
+	padding-top: 20px;
+	padding-bottom: 10px;
+	background-color: #e2dfda;
 }
