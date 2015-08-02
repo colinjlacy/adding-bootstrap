@@ -7,32 +7,45 @@
 	<link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
-<main class="body-content">
-	<form action="#" method="GET" class="responsive-form">
+	<main class="body-content">
+		<header>
+			<h1>Colin J Lacy</h1>
+			<h2>Some guy with a keyboard</h2>
+		</header>
+		<nav class="navigation">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
 
-		<div class="clearfix">
-			<div class="split split-left">
-				<label class="blue" for="first_name">First Name</label>
-				<input type="text" name="first_name" id="first_name" />
+
+		<form action="#" method="GET" class="responsive-form">
+
+			<div class="clearfix">
+				<div class="split split-left">
+					<label class="blue" for="first_name">First Name</label>
+					<input type="text" name="first_name" id="first_name" />
+				</div>
+
+				<div class="split split-right">
+					<label class="blue" for="last_name">Last Name</label>
+					<input type="text" name="last_name" id="last_name" />
+				</div>
 			</div>
 
-			<div class="split split-right">
-				<label class="blue" for="last_name">Last Name</label>
-				<input type="text" name="last_name" id="last_name" />
-			</div>
-		</div>
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email"/>
 
-		<label for="email">Email</label>
-		<input type="email" name="email" id="email"/>
+			<label for="msg">Message</label>
+			<textarea name="msg" id="msg" rows="10"></textarea>
 
-		<label for="msg">Message</label>
-		<textarea name="msg" id="msg" rows="10"></textarea>
+			<button type="submit" id="submit-button">Go!</button>
+		</form>
+		<hr/>
+		<a href="https://github.com/colinjlacy"><img src="img/gh.png" alt="Colin on Github" width="32"/></a>
 
-		<button type="submit" id="submit-button">Go!</button>
-	</form>
-	<hr/>
-	<a href="https://github.com/colinjlacy"><img src="img/gh.png" alt="Colin on Github" width="32"/></a>
-
-</main>
+	</main>
 </body>
 </html>
